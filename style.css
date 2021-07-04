@@ -32,45 +32,24 @@ div{
 }
 
 button {
-    background: transparent;
-    border-width: 0;
-    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    transition: .3s;
-    display: block;
-    z-index: 3;
-    background: #41294a;
-    color: white;
-    padding: 0 30px;
-    line-height: 40px;
-}
-
-button:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    left: -5px;
-    top: -5px;
-    background: #ff2c54;
-    z-index: 1;
-    transition: .4s ease-out;
-}
-button:after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    right: -5px;
-    bottom: -5px;
-    background: #41ebdf;
-    transition: .4s ease-out .1s;
-}
-button:hover:before {
-    transform: translate(5px, 5px);
-}
-button:hover:after {
-    transform: translate(-5px, -5px);
-}
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
