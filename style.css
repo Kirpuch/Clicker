@@ -39,16 +39,14 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     transition: .3s;
-}
-button span {
     display: block;
-    position: relative;
     z-index: 3;
     background: #41294a;
     color: white;
     padding: 0 30px;
     line-height: 40px;
 }
+
 button:before {
     content: "";
     position: absolute;
