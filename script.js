@@ -6,3 +6,5 @@ function start() {
     button.onclick = () => counter.textContent = clicks++;
 }
 
+
+
